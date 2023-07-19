@@ -23,11 +23,11 @@ nav{
     
     display: flex;
     justify-content:space-between;
-    max-width: 1100px;
-    margin: 0 auto;
+    padding: 0px 100px;
 }
 #g-design{
     color:#F948B2;
+    
 }
 .logo-container img{
     width: 40%;
@@ -59,7 +59,7 @@ nav{
 }
 /* main part */
 main{
-    max-width: 1100px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 /* banner section */
@@ -84,6 +84,7 @@ main{
     font-size: 2rem;
     font-weight: 800;
     color:#e32397;
+    text-shadow: 2px 2px 2px #de3edb;
     margin-top: -5px;
     margin-bottom: 0px;
 }
@@ -118,6 +119,7 @@ main{
 /* vedio section */
 .vedio-title{
     color: #8758F1;
+    text-shadow: 2px 2px 2px #de3edb;
 }
 .vedio-section{
    margin-bottom: 150px;
@@ -199,7 +201,7 @@ main{
 
 /* footer section */
 footer{
-    background-color: #0B0223;
+    background-color: hsl(251, 85%, 3%);
     color:white;
 }
 .footer-logo{
@@ -217,14 +219,28 @@ footer{
     list-style: none;
     margin-right: 30px;
 }
+.icon-container{
+    display: flex;
+    justify-content: center;
+}
+.icon-container li{
+    list-style: none;
+    padding: 20px;
+}
+.icon-style{
+    padding: 10px;
+    border:none;
+    background-color: #FFF;
+    border-radius: 10px;
+    font-size: 2rem;
+}
 
 @media screen and (max-width:576px) {
     nav,nav ul,.vedio-img,.play-section{
         flex-direction: column;
     }
-    header{
-        background-color: none;
-        box-shadow: none;
+    nav{
+        padding: 0px 0px;
     }
     .logo-container img{
         width: 20%;
@@ -237,11 +253,14 @@ footer{
 
     .banner-container{
         flex-direction: column-reverse;
+        justify-content: center;
     }
     .banner-content{
-        padding: 80PX;
-        margin-left: 30px;
-        margin-top: 60px;
+        padding: 50PX;
+        padding-left: 60px;
+        /* text-align: center; */
+        margin-left: 20px;
+        margin-top: 40px;
         background-color: hsl(342, 63%, 97%);
     }
     .banner-img img{
@@ -249,7 +268,10 @@ footer{
         margin:0 auto;
     }
     .banner-img{
-             margin-left: 100px;
+             /* margin-left: 100px; */
+                text-align: center;
+                margin-left: 0px;
+            
     }
     .btn-primary{
         padding:5px 10px;
@@ -266,14 +288,15 @@ footer{
     }
     /* vedio section */
     .vedio-section{
-        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 60px;
     }
     /* .vedio-content{
         margin-left: 30px;
     } */
-    .vedio-img{
+    /* .vedio-img{
      margin-left: 50px;
-    }
+    } */
 
     .common-heading-color{
         font-size: 1rem;
@@ -282,25 +305,26 @@ footer{
         font-size: 0.7rem;
     }
     .rectangle-img img{
-        width: 90%;
+        width: 70%;
     }
     /* play section */
     .play-section{
-        margin:0 auto;
+        text-align: center;
     }
     .play-horse img {
-        width: 80%;
+        width: 70%;
     }
     .common-description-color {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
-    /* ball section */
-    .ball-container{
+   /* ball section */
+     .ball-container{
         display: grid;
-        grid-template-columns: repeat(3,180px);
-        padding-left: 200px;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 70px;
         margin-top: 150px;
         margin-bottom: 30px;
+        justify-content: center;
     }
     .ball-design p{
         font-size: 0.5rem;
@@ -314,25 +338,41 @@ footer{
         display: grid;
         grid-template-columns: repeat(2,70px);
     }
+    /* plaay section */
+    .play-content{
+           text-align: center;
+           margin-right: 0px;
+           margin-bottom: 20px;
+    }
+     .play-section{
+        text-align: center;
+        margin-left: 0px;
+     }
+
     .play-horse img{
 
-        width: 80%;
-        margin-left: 30px;
+        width: 70%;
+        /* margin-left: -10px; */
     }
     .play-cute img{
-        width: 50%;
-        margin-left: 10px;
+        width: 40%;
+        position: relative;
+        top: -80px;
+        left: 60px;
+        margin-left: -150px;
     }
-    .play-cute{
+    /* .play-cute{
         position: relative;
         top: -80px;
         left: -20px;
-    }
-
-
+    } */
     footer{
-        padding: 100px 300px;
+        margin-top: 20px;
     }
+    .footer-logo{
+        padding: 30px;
+    }
+
     
 }
 
