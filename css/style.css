@@ -376,6 +376,9 @@ footer{
     .rectangle-img img{
         width: 70%;
     }
+    .img-container{
+        width: 100%;
+    }
     /* play section */
     .play-section{
         text-align: center;
@@ -453,6 +456,83 @@ footer{
         font-size: 0.6rem;
     }
     
+}
+@media screen  and (min-width:576px) and (max-width:992px) {
+    nav,nav ul,.vedio-img,.play-section{
+        flex-direction: column;
+    }
+    nav{
+        padding: 0px 0px;
+    }
+    .logo-container img{
+        width: 20%;
+        height: 30%;
+    }
+    .link-container ul li{
+        margin-top: 20px;
+    }
+
+
+    .banner-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .banner-content{
+        padding: 50PX;
+        padding-left: 60px;
+        /* text-align: center; */
+        margin-left: 20px;
+        margin-top: 40px;
+        background-color: hsl(342, 63%, 97%);
+    }
+    .banner-img img{
+        width: 80%;
+        margin:0 auto;
+    }
+    .banner-img{
+             /* margin-left: 100px; */
+                text-align: center;
+                margin-left: 0px;
+            
+    }
+    .play-content{
+        text-align: center;
+        margin-right: 0px;
+        margin-bottom: 20px;
+ }
+  .play-section{
+     text-align: center;
+     margin-left: 0px;
+  }
+
+ .play-horse img{
+
+     width: 70%;
+     /* margin-left: -10px; */
+ }
+ .play-cute img{
+     width: 40%;
+     position: relative;
+     top: -80px;
+     left: 60px;
+     margin-left: -150px;
+ }
+ .vedio-section{
+    text-align: center;
+    margin-bottom: 60px;
+}
+ .common-heading-color{
+    font-size: 1rem;
+}
+.vedio-description{
+    font-size: 0.7rem;
+}
+.rectangle-img img{
+    width: 70%;
+}
+.img-container{
+    width: 100%;
+}
 }
 
 
