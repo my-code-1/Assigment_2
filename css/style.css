@@ -222,11 +222,34 @@ footer{
     nav,nav ul,.vedio-img,.play-section{
         flex-direction: column;
     }
+    header{
+        background-color: none;
+        box-shadow: none;
+    }
+    .logo-container img{
+        width: 20%;
+        height: 30%;
+    }
+    .link-container ul li{
+        margin-top: 20px;
+    }
+
+
     .banner-container{
         flex-direction: column-reverse;
     }
+    .banner-content{
+        padding: 80PX;
+        margin-left: 30px;
+        margin-top: 60px;
+        background-color: hsl(342, 63%, 97%);
+    }
+    .banner-img img{
+        width: 80%;
+        margin:0 auto;
+    }
     .banner-img{
-             margin-left: 0px;
+             margin-left: 100px;
     }
     .btn-primary{
         padding:5px 10px;
@@ -241,6 +264,77 @@ footer{
     .banner-description{
         font-size: 0.5rem;
     }
+    /* vedio section */
+    .vedio-section{
+        margin: 0 auto;
+    }
+    /* .vedio-content{
+        margin-left: 30px;
+    } */
+    .vedio-img{
+     margin-left: 50px;
+    }
+
+    .common-heading-color{
+        font-size: 1rem;
+    }
+    .vedio-description{
+        font-size: 0.7rem;
+    }
+    .rectangle-img img{
+        width: 90%;
+    }
+    /* play section */
+    .play-section{
+        margin:0 auto;
+    }
+    .play-horse img {
+        width: 80%;
+    }
+    .common-description-color {
+        font-size: 0.7rem;
+    }
+    /* ball section */
+    .ball-container{
+        display: grid;
+        grid-template-columns: repeat(3,180px);
+        padding-left: 200px;
+        margin-top: 150px;
+        margin-bottom: 30px;
+    }
+    .ball-design p{
+        font-size: 0.5rem;
+        margin-left: 0px;
+        
+    }
+    .ball-design img{
+        width: 60%;
+    }
+    .ball-design{
+        display: grid;
+        grid-template-columns: repeat(2,70px);
+    }
+    .play-horse img{
+
+        width: 80%;
+        margin-left: 30px;
+    }
+    .play-cute img{
+        width: 50%;
+        margin-left: 10px;
+    }
+    .play-cute{
+        position: relative;
+        top: -80px;
+        left: -20px;
+    }
+
+
+    footer{
+        padding: 100px 300px;
+    }
     
 }
+
+
 
